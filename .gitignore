@@ -6,6 +6,10 @@
 *.key
 *.sum
 *.db
+dags/
+logs/
+plugins/
+config/
 
 # Windows system files
 Thumbs.db
