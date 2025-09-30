@@ -6,3 +6,6 @@ help:
 
 
 init: ## Install external dependencies to run this project
+	curl -LfO https://airflow.apache.org/docs/apache-airflow/3.1.0/docker-compose.yaml
+# 	mkdir ./dags ./logs ./plugins
+# 	@echo -e "AIRFLOW_UID=$(id -u)\nAIRFLOW_GID=0" > .env
