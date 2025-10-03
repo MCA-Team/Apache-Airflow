@@ -1,13 +1,13 @@
 from airflow import DAG
-from airflow.operators import BashOperator
+from airflow.operators.bash import BashOperator
 from datetime import datetime
 
 
 with DAG(
-    dag_id = "DAG v1",
+    dag_id = "DAG_v1",
     description = "Test dag",
     start_date = datetime(2025, 10, 3, 14),
-    schedule_interval = "@daily"
+    schedule = "@daily"
 ) as dag:
     task1 = BashOperator(
         task_id = "task1",
